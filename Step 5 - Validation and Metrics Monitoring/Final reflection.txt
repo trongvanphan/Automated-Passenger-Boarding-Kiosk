@@ -1,0 +1,15 @@
+As a final reflection, there are 2 problems that I encountered during this project:
+1- Face API: Face service is only available to Microsoft managed customers and partners.
+
+I'm facing the face api error when using Udacity lab credential
+Even I use the sample on the lesson "Facial Recognition Demo and Summary", it still is error
+
+Error is on build_person_group
+----> 7 client.person_group.create(person_group_id = person_group_id, name=person_group_id)
+--> 121 raise models.APIErrorException(self._deserialize, response)
+
+APIErrorException: (InvalidRequest) Invalid request has been sent.
+
+
+2- Need install a lot of additional library that lesson didn't mention
+I do the search on google and install them
