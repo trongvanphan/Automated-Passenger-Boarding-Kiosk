@@ -1,0 +1,24 @@
+pip install azure-ai-formrecognizer
+pip install video_indexer
+pip install azure-cognitiveservices-vision-computervision
+pip install azure-cognitiveservices-vision-face
+
+
+from azure.core.credentials import AzureKeyCredential
+from azure.ai.formrecognizer import FormRecognizerClient
+from azure.core.exceptions import ResourceNotFoundError
+from azure.ai.formrecognizer import FormTrainingClient
+from PIL import Image, ImageDraw
+from matplotlib.pyplot import imshow
+from urllib.parse import urlparse
+from io import BytesIO
+from video_indexer import VideoIndexer
+from azure.cognitiveservices.vision.face import FaceClient
+from azure.cognitiveservices.vision.face.models import TrainingStatusType
+from msrest.authentication import CognitiveServicesCredentials
+from azure.cognitiveservices.vision.customvision.training import CustomVisionTrainingClient
+from azure.cognitiveservices.vision.customvision.prediction import CustomVisionPredictionClient
+from azure.cognitiveservices.vision.customvision.training.models import ImageFileCreateBatch, ImageFileCreateEntry, Region
+from msrest.authentication import ApiKeyCredentials
+from urllib.parse import urlparse
+
